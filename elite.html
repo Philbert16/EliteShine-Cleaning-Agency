@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliteshine Cleaning Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-sans text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="bg-blue-600 text-white sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl md:text-2xl font-semibold">EliteShine</h1>
+      <!-- Mobile Menu Button -->
+      <button id="menuToggle" class="md:hidden text-white focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+      <!-- Desktop Menu -->
+      <ul id="navMenu" class="hidden md:flex gap-4 md:gap-8 text-sm md:text-base">
+        <li class="hover:underline cursor-pointer"><a href="#">Home</a></li>
+        <li class="hover:underline cursor-pointer"><a href="#service">Services</a></li>
+        <li class="hover:underline cursor-pointer"><a href="#about">About</a></li>
+        <li class="hover:underline cursor-pointer"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-blue-700 px-6 py-4">
+      <ul class="space-y-3 text-sm">
+        <li class="hover:underline cursor-pointer"><a href="#">Home</a></li>
+        <li class="hover:underline cursor-pointer"><a href="#service">Services</a></li>
+        <li class="hover:underline cursor-pointer"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- HERO SECTION -->
+  <section class="bg-blue-600 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="text-white">
+        <h2 class="text-4xl font-bold mb-6">
+          EliteShine – Where Clean Meets Excellence
+        </h2>
+        <p class="text-blue-100 mb-6 max-w-md">
+          Professional, reliable cleaning services designed to keep your home and business spotless, fresh, and
+          welcoming.
+        </p>
+        <button class="border border-white px-6 py-2 rounded hover:bg-white hover:text-blue-600 transition">
+          Learn More
+        </button>
+      </div>
+
+      <!-- FORM CARD -->
+      <div id="form" class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md justify-self-end z-10">
+        <h3 class="text-xl font-semibold mb-6">Request a Cleaning Quote</h3>
+
+        <form class="space-y-4">
+          <input type="text" placeholder="Full Name" class="w-full border-b border-gray-300 focus:outline-none py-2" />
+
+          <input type="text" placeholder="Property Type"
+            class="w-full border-b border-gray-300 focus:outline-none py-2" />
+
+          <input type="email" placeholder="Email Address"
+            class="w-full border-b border-gray-300 focus:outline-none py-2" />
+
+          <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+            Submit
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- ANGLED WHITE SECTION -->
+    <div class="absolute bottom-0 w-full h-24 bg-white skew-y-[-3deg] origin-bottom-left"></div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="bg-white py-24">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <p class="text-gray-500 mb-16">
+        Trusted by homes and businesses for reliable, high-quality cleaning services.
+      </p>
+
+      <!-- <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <h3 class="text-2xl font-bold">15,000+</h3>
+          <p class="text-gray-500 mt-2">Cleanings Completed</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold">98%</h3>
+          <p class="text-gray-500 mt-2">Customer Satisfaction</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold">5,000+</h3>
+          <p class="text-gray-500 mt-2">Happy Clients</p>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <section id="service" class="bg-gray-200">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h1 class="text-5xl font-bold mb-4">Our Cleaning Services</h1>
+        <p class="text-xl opacity-90">Professional cleaning solutions tailored to your needs</p>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">What We Offer</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 overflow-hidden">
+            <div
+              class="h-40 flex items-center justify-center bg-[url(https://media.istockphoto.com/id/1315338184/photo/basket-with-brushes-rags-natural-sponges-and-cleaning-products.webp?a=1&b=1&s=612x612&w=0&k=20&c=oWc0BuL_g69c04OS1jC-lwy8jiXK57mJ5XRw_sYSAAQ=)] bg-cover bg-center">
+              <i class="fas fa-home text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Residential Cleaning</h3>
+              <p class="text-gray-600 mb-4">Thorough cleaning for your home, including bedrooms, living areas,
+                kitchens, and bathrooms. We ensure your space is spotless and fresh.</p>
+              <a href="#form" class="text-blue-600 font-semibold hover:text-blue-800">Book a Cleaning Quote →</a>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 overflow-hidden">
+            <div
+              class="h-40 flex items-center justify-center bg-[url(https://plus.unsplash.com/premium_photo-1663040355782-54d72d558f8a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29tZXJjaWFsJTIwY2xlYW5pbmd8ZW58MHx8MHx8fDA%3D)] bg-cover bg-center">
+              <i class="fas fa-building text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Commercial Cleaning</h3>
+              <p class="text-gray-600 mb-4">Professional cleaning for offices, retail spaces, and commercial
+                buildings. We maintain a hygienic and impressive workplace.</p>
+              <a href="#form" class="text-blue-600 font-semibold hover:text-blue-800">Book a Cleaning Quote →</a>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 overflow-hidden">
+            <div
+              class="h-40 flex items-center justify-center bg-[url(https://media.istockphoto.com/id/1417833187/photo/professional-cleaner-vacuuming-a-carpet.webp?a=1&b=1&s=612x612&w=0&k=20&c=NleVbWc61yRrVBUQv3k6_9g3jAQuApQph4ke2oVPXeo=)] bg-cover bg-center">
+              <i class="fas fa-sofa text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Carpet & Upholstery</h3>
+              <p class="text-gray-600 mb-4">Deep cleaning services for carpets, rugs, and furniture using
+                eco-friendly products. Restore the beauty of your fabrics.</p>
+              <a href="#form" class="text-blue-600 font-semibold hover:text-blue-800">Book a Cleaning Quote →</a>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 overflow-hidden">
+            <div
+              class="h-40 flex items-center justify-center bg-[url(https://images.unsplash.com/photo-1489514354504-1653aa90e34e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGNvbnN0cnVjdGlvbiUyMENsZWFuaW5nfGVufDB8fDB8fHww)] bg-cover bg-center">
+              <i class="fas fa-hammer text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Post-construction Cleaning</h3>
+              <p class="text-gray-600 mb-4">Specialized cleaning after construction or renovation projects. We
+                remove dust, debris, and ensure your space is move-in ready.</p>
+              <a href="#form" class="text-blue-600 font-semibold hover:text-blue-800">Book a Cleaning Quote →</a>
+            </div>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 overflow-hidden">
+            <div
+              class="h-40 flex items-center justify-center bg-[url(https://media.istockphoto.com/id/2233169641/photo/close-up-cropped-shot-of-unrecognizable-professional-cleaning-service-worker-removing-dirt.webp?a=1&b=1&s=612x612&w=0&k=20&c=oKeGda4SmakIBB9cF3TB_trbmJUVhn_skaOqhlb8fb8=)] bg-cover bg-center">
+              <i class="fas fa-trash text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Deep Cleaning</h3>
+              <p class="text-gray-600 mb-4">Intensive cleaning services that go beyond routine maintenance.
+                Perfect for move-ins, move-outs, or seasonal refreshes.</p>
+              <a href="#form" class="text-blue-600 font-semibold hover:text-blue-800">Book a Cleaning Quote →</a>
+            </div>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105 overflow-hidden">
+            <div
+              class="h-40 flex items-center justify-center bg-[url(https://media.istockphoto.com/id/1215724939/photo/cleaning-and-disinfecting-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=m4CHBnmMVyVrm3vjYI3ia1jdsZkmaszh33b3AxHR37w=)] bg-cover bg-center">
+              <i class="fas fa-spray-can text-white text-6xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Disinfection Service</h3>
+              <p class="text-gray-600 mb-4">Professional disinfection and sanitization using hospital-grade
+                products. Ideal for offices, schools, and health-conscious families.</p>
+              <a href="#form" class="text-blue-600 font-semibold hover:text-blue-800">Book a Cleaning Quote →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <!-- <section class="bg-blue-600 text-white py-12 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Experience EliteShine?</h2>
+            <p class="text-lg mb-6 opacity-90">Get a free quote for your cleaning needs today</p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">Request a
+                Quote</button>
+        </div>
+    </section> -->
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="bg-gray-50 py-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+      <div class="bg-white p-8 rounded shadow">
+        <h4 class="font-semibold mb-2">Residential Cleaning</h4>
+        <p class="text-gray-600 text-sm">
+          Spotless homes with eco-friendly products and professional care.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded shadow">
+        <h4 class="font-semibold mb-2">Commercial Cleaning</h4>
+        <p class="text-gray-600 text-sm">
+          Offices, shops, and buildings cleaned to the highest standards.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded shadow">
+        <h4 class="font-semibold mb-2">Fast & Reliable Service</h4>
+        <p class="text-gray-600 text-sm">
+          On-time service with trained staff you can trust.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">About EliteShine</h1>
+            <p class="text-lg md:text-xl opacity-90">Delivering Excellence in Cleaning Services Since 2024</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-12 md:py-20 px-4 md:px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <!-- Content -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About EliteShine</h2>
+                    <p class="text-gray-600 text-base md:text-lg mb-4 leading-relaxed">
+                        At EliteShine, we believe a clean environment is the foundation of comfort, productivity, and peace of mind. We are a professional cleaning agency committed to delivering exceptional results through attention to detail, reliability, and care.
+                    </p>
+                    <p class="text-gray-600 text-base md:text-lg mb-4 leading-relaxed">
+                        Our trained and trustworthy team provides high-quality cleaning services for homes, offices, and commercial properties across Accra and surrounding areas. We treat every space as if it were our own—because your satisfaction is our priority.
+                    </p>
+                    <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                        Today, EliteShine proudly serves thousands of satisfied customers across the region, with a
+                        growing team of trained professionals dedicated to delivering the highest standards of
+                        cleanliness and customer service.
+                    </p>
+                </div>
+                <!-- Image -->
+                <div class="h-96 bg-blue-500 rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&h=400&fit=crop"
+                        alt="Our Team" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="bg-blue-50 py-12 md:py-20 px-4 md:px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Our Mission & Vision</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Mission -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full mb-6">
+                        <i class="fas fa-bullseye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To deliver exceptional cleaning services that transform spaces into clean, healthy, and
+                        welcoming environments. We are committed to using eco-friendly products, maintaining the highest
+                        standards of professionalism, and building lasting relationships with every client we serve.
+                    </p>
+                </div>
+
+                <!-- Vision -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="flex items-center justify-center w-16 h-16 bg-green-600 rounded-full mb-6">
+                        <i class="fas fa-eye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To become the most trusted and preferred cleaning service provider in the region, recognized for
+                        our unwavering commitment to quality, innovation, and customer satisfaction. We envision a
+                        future where every space we touch reflects excellence and care.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-12 md:py-20 px-4 md:px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Our Core Values</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Value 1 -->
+                <div class="text-center">
+                    <div class="flex items-center justify-center w-20 h-20 bg-blue-600 rounded-full mx-auto mb-4">
+                        <i class="fas fa-star text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Excellence</h3>
+                    <p class="text-gray-600">We strive for perfection in every cleaning task, no matter how big or
+                        small.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="text-center">
+                    <div class="flex items-center justify-center w-20 h-20 bg-green-600 rounded-full mx-auto mb-4">
+                        <i class="fas fa-handshake text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Integrity</h3>
+                    <p class="text-gray-600">We believe in honest communication and transparent business practices.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="text-center">
+                    <div class="flex items-center justify-center w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4">
+                        <i class="fas fa-leaf text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Sustainability</h3>
+                    <p class="text-gray-600">We use eco-friendly products that are safe for families and the
+                        environment.</p>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="text-center">
+                    <div class="flex items-center justify-center w-20 h-20 bg-yellow-600 rounded-full mx-auto mb-4">
+                        <i class="fas fa-heart text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Customer Care</h3>
+                    <p class="text-gray-600">Your satisfaction is our priority, and we go the extra mile every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="bg-gray-100 py-12 md:py-20 px-4 md:px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Why Choose EliteShine?</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Professional Team</h3>
+                        <p class="text-gray-600">Our experienced and trained cleaning professionals are dedicated to
+                            excellence.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Eco-Friendly Products</h3>
+                        <p class="text-gray-600">We use safe, sustainable cleaning products that protect your family and
+                            the environment.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Flexible Scheduling</h3>
+                        <p class="text-gray-600">We work around your schedule with flexible booking options and custom
+                            plans.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Affordable Pricing</h3>
+                        <p class="text-gray-600">High-quality cleaning services at competitive prices with no hidden
+                            fees.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Fully Insured</h3>
+                        <p class="text-gray-600">Rest easy knowing we are fully insured and bonded for your peace of
+                            mind.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
+                            <i class="fas fa-check text-xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Customer Satisfaction</h3>
+                        <p class="text-gray-600">We guarantee 100% satisfaction or your money back on any service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="bg-blue-600 text-white py-12 md:py-20 px-4 md:px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <h3 class="text-4xl md:text-5xl font-bold mb-2">2+</h3>
+                    <p class="text-blue-100">Years in Business</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl md:text-5xl font-bold mb-2">2,000+</h3>
+                    <p class="text-blue-100">Cleanings Completed</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl md:text-5xl font-bold mb-2">1,100+</h3>
+                    <p class="text-blue-100">Happy Clients</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl md:text-5xl font-bold mb-2">83%</h3>
+                    <p class="text-blue-100">Satisfaction Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-white py-12 md:py-16 px-4 md:px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ready to Experience the EliteShine Difference?
+            </h2>
+            <p class="text-gray-600 text-lg mb-8">Get started today with a free consultation and quote</p>
+            <a href="contact.html"
+                class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Contact
+                Us Today</a>
+        </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8 md:py-12 px-4 md:px-6">
+    <div class="max-w-6xl mx-auto">
+      <!-- Footer Content Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-8">
+        <!-- About Section -->
+        <div class="text-center sm:text-left">
+          <h3 class="text-white text-base md:text-lg font-bold mb-3 md:mb-4">EliteShine</h3>
+          <p class="text-xs md:text-sm leading-relaxed">Professional cleaning services dedicated to delivering
+            excellence
+            and customer satisfaction since 2020.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="text-center sm:text-left">
+          <h4 class="text-white font-bold mb-3 md:mb-4 text-sm md:text-base">Quick Links</h4>
+          <ul class="space-y-1 md:space-y-2 text-xs md:text-sm">
+            <li><a href="elitelandingpage.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+            <li><a href="#" class="hover:text-white transition">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="text-center sm:text-left">
+          <h4 class="text-white font-bold mb-3 md:mb-4 text-sm md:text-base">Services</h4>
+          <ul class="space-y-1 md:space-y-2 text-xs md:text-sm">
+            <li><a href="#" class="hover:text-white transition">Residential Cleaning</a></li>
+            <li><a href="#" class="hover:text-white transition">Commercial Cleaning</a></li>
+            <li><a href="#" class="hover:text-white transition">Deep Cleaning</a></li>
+            <li><a href="#" class="hover:text-white transition">Disinfection Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="text-center sm:text-left">
+          <h4 class="text-white font-bold mb-3 md:mb-4 text-sm md:text-base">Contact Info</h4>
+          <ul class="space-y-2 md:space-y-3 text-xs md:text-sm">
+            <li class="flex items-center justify-center sm:justify-start gap-2">
+              <i class="fas fa-phone text-blue-400"></i>
+              <span><a href="tel:+233 (0) 595 288 293">+233 (0) 595 288 293</a></span>
+            </li>
+            <li class="flex items-center justify-center sm:justify-start gap-2">
+              <i class="fas fa-envelope text-blue-400"></i>
+              <span><a href="mailto:info@eliteshine.com">info@eliteshine.com</a></span>
+            </li>
+            <li class="flex items-center justify-center sm:justify-start gap-2">
+              <i class="fas fa-map-marker-alt text-blue-400"></i>
+              <span>Dome, Pillar 2</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-gray-700 my-6 md:my-8"></div>
+
+      <!-- Bottom Footer -->
+      <div class="flex flex-col items-center gap-4 md:flex-row md:justify-between">
+        <!-- Social Links -->
+        <div class="flex gap-4">
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition text-lg">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition text-lg">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition text-lg">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-blue-400 transition text-lg">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="text-xs md:text-sm text-center md:text-right">
+          &copy; 2026 EliteShine Cleaning Agency. All rights reserved.<br class="md:hidden" />
+          <span class="hidden md:inline"> | </span>
+          <a href="#" class="hover:text-white transition">Privacy Policy</a>
+          <span> | </span>
+          <a href="#" class="hover:text-white transition">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
